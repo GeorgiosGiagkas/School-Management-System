@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts Nunito -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <!-- Custome css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PR Assignments In Course</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm custom-border sticky-top custom-bg-black">
+        <div class="container">
+            <a href="#" class="navbar-brand custom-text-secondary">
+                <i class="fas fa-school mr-2"></i>Private School
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-nav">
+                <i class="fas fa-sliders-h custom-text-secondary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="courses.html" class="nav-link custom-text-secondary ">Courses</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="students.html" class="nav-link custom-text-secondary ">Students</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="teachers.html" class="nav-link custom-text-secondary">Teachers</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="assignments.html" class="nav-link custom-text-secondary">Assignments</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-item custom-text-secondary">
+                            <i class="fas fa-user-times"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <header id="main-header" class="custom-primary mb-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col">
+                    <h2 class="ml-auto">Assignments</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="action">
+        <div class="container">
+            <div class="row">
+                <div id="search" class="col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search assignment id...">
+                        <div class="input-group-append">
+                            <button class="btn custom-text-secondary custom-border">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="select-course" class="dropdown col-md-3">
+                    <a class="dropdown-toggle btn custom-text-secondary custom-border text-white"
+                        data-toggle="dropdown">Select Course</a>
+                    <div class="dropdown-menu custom-secondary custom-border custom-text-secondary">
+
+                    </div>
+                </div>
+
+                <div id="show-assignments" class="dropdown col-md-3">
+                    <a class="dropdown-toggle btn custom-text-secondary custom-border text-white disabled"
+                        data-toggle="dropdown">Show Assignments</a>
+                    <div class="dropdown-menu custom-secondary custom-border custom-text-secondary">
+                        <a class="dropdown-item" id="to-delete">Assignments in Course</a>
+                        <a class="dropdown-item" id="to-add">Assignments To Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="assignments" class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card custom-secondary custom-border">
+                        <div class="card-header custom-primary custom-border">
+                            <h4>List of Assignments</h4>
+                        </div>
+                        <table class="table table-borderless table-responsive-sm">
+                            <thead>
+                                <tr class="custom-text-secondary custom-border">
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Submission Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="main-footer" class="custom-primary mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        Copyright &copy; <span id="year"></span>
+                        Private School
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- JQuery, custome script -->
+    <script>
+        $("#year").text(new Date().getFullYear());
+    </script>
+
+    <script src="./app/assignments_in_course.js"></script>
+</body>
+
+</html>

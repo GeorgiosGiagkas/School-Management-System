@@ -1,0 +1,54 @@
+body{
+    background: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+.custom-bg-black{
+    background: black;
+}
+
+.custom-primary{
+    background: #4d0000;
+    color:white;
+}
+
+.custom-secondary{
+    background: black;
+    color:white;
+}
+
+.custom-text-primary{
+    color: #4d0000;
+}
+
+.custom-text-secondary{
+    color: #b5a642;
+}
+
+
+.custom-border{
+    border: #b5a642 solid 1px;
+}
+
+input:hover{
+    background: #b5a642;
+    
+}
+.dropdown-item:hover{
+    background: #4d0000;
+}
+a:hover{
+   color:white;
+}
+.btn:hover{
+    color:white;
+}
+
+.custom-disable{
+    display: none;
+}
+
+.custom-active{
+    color:white; 
+}
+
